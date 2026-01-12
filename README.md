@@ -32,12 +32,12 @@ This project follows **Clean Architecture** principles to ensure scalability, te
 *   **Utils**: `image_picker`, `shared_preferences`, `google_fonts`
 
 
-## 📸 Screenshots
+## Screenshots
 
 | Login Screen | Dashboard | Analysis Result |
 |:---:|:---:|:---:|
 | ![Login](/docs/Mamosis_Login.jpeg) | ![Home](/docs/Mamosis_Anasayfa.jpeg ) | ![Result](/docs/Mamosis_Patient_Details.jpeg) |
 
-## 👨‍💻 Author
+## Author
 
 Developed by **[İbrahim Coşkun](https://github.com/ibrahimcoskun147)**
