@@ -63,6 +63,7 @@ dependencies:
   # Image Processing
   image: ^4.3.0
   google_generative_ai: ^0.4.7
+  flutter_dotenv: ^6.0.0
 
 dev_dependencies:
   flutter_test:
@@ -88,7 +89,8 @@ flutter:
 
   # Assets for the app
   
-    
+  assets:
+    - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

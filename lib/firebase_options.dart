@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -40,49 +41,49 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyClYKasVqO3z_6vPumYhDs7KUAPqPm032o',
-    appId: '1:491504143482:web:22ca5413b948d55e3a3fc3',
-    messagingSenderId: '491504143482',
-    projectId: 'mamosis',
+  static FirebaseOptions get web => FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_WEB']!,
+    appId: dotenv.env['FIREBASE_APP_ID_WEB']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
     authDomain: 'mamosis.firebaseapp.com',
-    storageBucket: 'mamosis.firebasestorage.app',
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
     measurementId: 'G-DGEJK17EMZ',
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCsV2-eE_LCuvILmqnXrAS3dvaWrEUvstU',
-    appId: '1:491504143482:android:a467116a41e00a1c3a3fc3',
-    messagingSenderId: '491504143482',
-    projectId: 'mamosis',
-    storageBucket: 'mamosis.firebasestorage.app',
+  static FirebaseOptions get android => FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_ANDROID']!,
+    appId: dotenv.env['FIREBASE_APP_ID_ANDROID']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA6l8_PVvM9GMlLPLlRRCGDRoB9923qgWc',
-    appId: '1:491504143482:ios:f2f9ac05e5f820993a3fc3',
-    messagingSenderId: '491504143482',
-    projectId: 'mamosis',
-    storageBucket: 'mamosis.firebasestorage.app',
+  static FirebaseOptions get ios => FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    appId: dotenv.env['FIREBASE_APP_ID_IOS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
     iosBundleId: 'com.example.mamosis',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyA6l8_PVvM9GMlLPLlRRCGDRoB9923qgWc',
-    appId: '1:491504143482:ios:f2f9ac05e5f820993a3fc3',
-    messagingSenderId: '491504143482',
-    projectId: 'mamosis',
-    storageBucket: 'mamosis.firebasestorage.app',
+  static FirebaseOptions get macos => FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    appId: dotenv.env['FIREBASE_APP_ID_IOS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
     iosBundleId: 'com.example.mamosis',
   );
 
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyClYKasVqO3z_6vPumYhDs7KUAPqPm032o',
-    appId: '1:491504143482:web:78866c85e5f7f1d43a3fc3',
-    messagingSenderId: '491504143482',
-    projectId: 'mamosis',
+  static FirebaseOptions get windows => FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_WINDOWS']!,
+    appId: dotenv.env['FIREBASE_APP_ID_WINDOWS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
     authDomain: 'mamosis.firebaseapp.com',
-    storageBucket: 'mamosis.firebasestorage.app',
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
     measurementId: 'G-227EP3NRLV',
   );
 }
