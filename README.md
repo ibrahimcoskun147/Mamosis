@@ -36,7 +36,7 @@ This project follows **Clean Architecture** principles to ensure scalability, te
 
 | Login Screen | Dashboard | Analysis Result |
 |:---:|:---:|:---:|
-| ![Login](/docs/login.png) | ![Home](/docs/home.png) | ![Result](/docs/result.png) |
+| ![Login](/docs/Mamosis Login.jpeg) | ![Home](/docs/Mamosis Anasayfa.jpeg ) | ![Result](/docs/Mamosis Patient Details.jpeg) |
 
 ## 👨‍💻 Author
 
