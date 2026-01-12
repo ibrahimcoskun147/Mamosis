@@ -15,7 +15,7 @@ A medical imaging assistant tailored for doctors to manage patients and perform 
 *   **Dashboard**: Real-time statistics of patient screenings (Positive/Negative counts).
 *   **Pro Features**: Subscription simulation with 'Pro' badge in UI and restricted features.
 
-## 🛠 Technical Architecture
+## Technical Architecture
 
 This project follows **Clean Architecture** principles to ensure scalability, testability, and separation of concerns.
 
